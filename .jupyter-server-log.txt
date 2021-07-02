@@ -329,3 +329,427 @@ Websocket closed
 [I 19:03:09.436 NotebookApp] New terminal with automatic name: 2
 TermSocket.open: 2
 TermSocket.open: Opened 2
+[W 2021-07-02 20:13:38.949 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-02 20:13:38.949 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-02 20:13:38.949 LabApp] 'base_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-02 20:13:38.950 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-02 20:13:38.950 LabApp] 'trust_xheaders' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-02 20:13:38.950 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-02 20:13:38.950 LabApp] 'allow_origin_pat' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-02 20:13:38.950 LabApp] 'extra_template_paths' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+[W 2021-07-02 20:13:38.950 LabApp] 'jinja_template_vars' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+[W 2021-07-02 20:13:38.950 LabApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-02 20:13:38.950 LabApp] 'tornado_settings' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-07-02 20:13:38.950 LabApp] 'tornado_settings' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-07-02 20:13:38.965 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.8/site-packages/jupyterlab
+[I 2021-07-02 20:13:38.966 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 20:13:38.985 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.8/site-packages/nteract_on_jupyter
+[I 20:13:38.988 NotebookApp] Will shut down after 600 seconds with no kernels or terminals.
+[I 20:13:38.989 NotebookApp] Serving notebooks from local directory: /home/jovyan
+[I 20:13:38.989 NotebookApp] Jupyter Notebook 6.2.0 is running at:
+[I 20:13:38.990 NotebookApp] http://jupyter-ilvailska-2drscript-2dr3vr5tvz:8888/user/ilvailska-rscript-r3vr5tvz/?token=...
+[I 20:13:38.990 NotebookApp]  or http://127.0.0.1:8888/user/ilvailska-rscript-r3vr5tvz/?token=...
+[I 20:13:38.990 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 20:13:38.997 NotebookApp] No web browser found: could not locate runnable browser.
+[I 20:13:39.002 NotebookApp] 302 GET /user/ilvailska-rscript-r3vr5tvz/ (10.0.5.98) 2.480000ms
+[I 20:13:39.772 NotebookApp] 302 GET /user/ilvailska-rscript-r3vr5tvz/?token=6ZdehImGSVydwFLA2RMGfA (108.92.69.109) 1.060000ms
+[W 20:14:34.175 NotebookApp] Notebook R_version/R Scatterplot.ipynb is not trusted
+[I 20:14:34.357 NotebookApp] Kernel started: 8583453c-0e26-4391-8a68-73bad71095db, name: ir
+[I 20:14:34.358 NotebookApp] Culling kernels with idle durations > 600 seconds at 60 second intervals ...
+[I 20:14:34.358 NotebookApp] Culling kernels even with connected clients
+[I 20:14:35.361 NotebookApp] Adapting from protocol version 5.0 (kernel 8583453c-0e26-4391-8a68-73bad71095db) to 5.3 (client).
+[I 20:14:42.796 NotebookApp] Saving file at /R_version/R Scatterplot.ipynb
+[I 20:14:44.177 NotebookApp] Starting buffering for 8583453c-0e26-4391-8a68-73bad71095db:37d03a88dfaf4be2bf4e4247b848758a
+[W 20:15:17.647 NotebookApp] delete /R_version
+[E 20:15:17.648 NotebookApp] Uncaught exception DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/R_version (108.92.69.109)
+    HTTPServerRequest(protocol='https', host='hub.gke2.mybinder.org', method='DELETE', uri='/user/ilvailska-rscript-r3vr5tvz/api/contents/R_version', version='HTTP/1.1', remote_ip='108.92.69.109')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/handlers.py", line 237, in delete
+        yield maybe_future(cm.delete(path))
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 279, in delete
+        self.delete_file(path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 533, in delete_file
+        send2trash(os_path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 192, in send2trash
+        trash_move(path_b, dest_trash, topdir)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 103, in trash_move
+        os.rename(src, op.join(filespath, destname))
+    OSError: [Errno 18] Invalid cross-device link: b'/home/jovyan/R_version' -> b'/home/jovyan/.local/share/Trash/files/R_version'
+[W 20:15:17.660 NotebookApp] Unhandled error
+[E 20:15:17.661 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-gke2-mybinder-org=\"2|1:0|10:1625256819|30:username-hub-gke2-mybinder-org|44:Yzg5NGE1N2YwODU0NDA1NWFkNmZiYmY0ODRiZWVmMzE=|5567b44ba449520673bbf9b9a802291660265a6961682a36ef7462fde79e4107\"; _xsrf=2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "Origin": "https://hub.gke2.mybinder.org",
+      "Sec-Gpc": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
+      "X-Xsrftoken": "2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "X-Requested-With": "XMLHttpRequest",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub.gke2.mybinder.org",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "108.92.69.109,::ffff:10.0.15.52",
+      "X-Real-Ip": "108.92.69.109",
+      "X-Request-Id": "be9f551e1df203c547b46b8fde7034f2",
+      "Host": "hub.gke2.mybinder.org",
+      "Connection": "close"
+    }
+[E 20:15:17.661 NotebookApp] 500 DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/R_version (108.92.69.109) 15.560000ms referer=https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree
+[W 20:15:17.662 NotebookApp] delete /Py3_version
+[E 20:15:17.662 NotebookApp] Uncaught exception DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version (108.92.69.109)
+    HTTPServerRequest(protocol='https', host='hub.gke2.mybinder.org', method='DELETE', uri='/user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version', version='HTTP/1.1', remote_ip='108.92.69.109')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/handlers.py", line 237, in delete
+        yield maybe_future(cm.delete(path))
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 279, in delete
+        self.delete_file(path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 533, in delete_file
+        send2trash(os_path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 192, in send2trash
+        trash_move(path_b, dest_trash, topdir)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 103, in trash_move
+        os.rename(src, op.join(filespath, destname))
+    OSError: [Errno 18] Invalid cross-device link: b'/home/jovyan/Py3_version' -> b'/home/jovyan/.local/share/Trash/files/Py3_version'
+[W 20:15:17.663 NotebookApp] Unhandled error
+[E 20:15:17.664 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-gke2-mybinder-org=\"2|1:0|10:1625256819|30:username-hub-gke2-mybinder-org|44:Yzg5NGE1N2YwODU0NDA1NWFkNmZiYmY0ODRiZWVmMzE=|5567b44ba449520673bbf9b9a802291660265a6961682a36ef7462fde79e4107\"; _xsrf=2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "Origin": "https://hub.gke2.mybinder.org",
+      "Sec-Gpc": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
+      "X-Xsrftoken": "2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "X-Requested-With": "XMLHttpRequest",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub.gke2.mybinder.org",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "108.92.69.109,::ffff:10.0.15.52",
+      "X-Real-Ip": "108.92.69.109",
+      "X-Request-Id": "c6c47272d78415ef746b62e59c385be8",
+      "Host": "hub.gke2.mybinder.org",
+      "Connection": "close"
+    }
+[E 20:15:17.664 NotebookApp] 500 DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version (108.92.69.109) 17.860000ms referer=https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree
+[W 20:15:34.111 NotebookApp] delete /Py3_version/py3 scatterplot.html
+[W 20:15:34.133 NotebookApp] delete /Py3_version/README.md
+[W 20:15:34.140 NotebookApp] delete /Py3_version/regrex1.csv
+[W 20:15:34.147 NotebookApp] delete /Py3_version/py3 scatterplot.ipynb
+[W 20:15:38.059 NotebookApp] delete /Py3_version/Binder
+[E 20:15:38.059 NotebookApp] Uncaught exception DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version/Binder (108.92.69.109)
+    HTTPServerRequest(protocol='https', host='hub.gke2.mybinder.org', method='DELETE', uri='/user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version/Binder', version='HTTP/1.1', remote_ip='108.92.69.109')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/handlers.py", line 237, in delete
+        yield maybe_future(cm.delete(path))
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 279, in delete
+        self.delete_file(path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 533, in delete_file
+        send2trash(os_path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 192, in send2trash
+        trash_move(path_b, dest_trash, topdir)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 103, in trash_move
+        os.rename(src, op.join(filespath, destname))
+    OSError: [Errno 18] Invalid cross-device link: b'/home/jovyan/Py3_version/Binder' -> b'/home/jovyan/.local/share/Trash/files/Binder'
+[W 20:15:38.060 NotebookApp] Unhandled error
+[E 20:15:38.061 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-gke2-mybinder-org=\"2|1:0|10:1625256819|30:username-hub-gke2-mybinder-org|44:Yzg5NGE1N2YwODU0NDA1NWFkNmZiYmY0ODRiZWVmMzE=|5567b44ba449520673bbf9b9a802291660265a6961682a36ef7462fde79e4107\"; _xsrf=2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree/Py3_version",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "Origin": "https://hub.gke2.mybinder.org",
+      "Sec-Gpc": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
+      "X-Xsrftoken": "2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "X-Requested-With": "XMLHttpRequest",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub.gke2.mybinder.org",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "108.92.69.109,::ffff:10.0.15.52",
+      "X-Real-Ip": "108.92.69.109",
+      "X-Request-Id": "4d98af87ad78d2eb7460a136ed8061ad",
+      "Host": "hub.gke2.mybinder.org",
+      "Connection": "close"
+    }
+[E 20:15:38.061 NotebookApp] 500 DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version/Binder (108.92.69.109) 2.750000ms referer=https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree/Py3_version
+[W 20:15:38.062 NotebookApp] delete /Py3_version/PyScript
+[E 20:15:38.063 NotebookApp] Uncaught exception DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version/PyScript (108.92.69.109)
+    HTTPServerRequest(protocol='https', host='hub.gke2.mybinder.org', method='DELETE', uri='/user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version/PyScript', version='HTTP/1.1', remote_ip='108.92.69.109')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/handlers.py", line 237, in delete
+        yield maybe_future(cm.delete(path))
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 279, in delete
+        self.delete_file(path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 533, in delete_file
+        send2trash(os_path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 192, in send2trash
+        trash_move(path_b, dest_trash, topdir)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 103, in trash_move
+        os.rename(src, op.join(filespath, destname))
+    OSError: [Errno 18] Invalid cross-device link: b'/home/jovyan/Py3_version/PyScript' -> b'/home/jovyan/.local/share/Trash/files/PyScript'
+[W 20:15:38.063 NotebookApp] Unhandled error
+[E 20:15:38.064 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-gke2-mybinder-org=\"2|1:0|10:1625256819|30:username-hub-gke2-mybinder-org|44:Yzg5NGE1N2YwODU0NDA1NWFkNmZiYmY0ODRiZWVmMzE=|5567b44ba449520673bbf9b9a802291660265a6961682a36ef7462fde79e4107\"; _xsrf=2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree/Py3_version",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "Origin": "https://hub.gke2.mybinder.org",
+      "Sec-Gpc": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
+      "X-Xsrftoken": "2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "X-Requested-With": "XMLHttpRequest",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub.gke2.mybinder.org",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "108.92.69.109,::ffff:10.0.15.52",
+      "X-Real-Ip": "108.92.69.109",
+      "X-Request-Id": "f2ffb8ded066b235570914add9703659",
+      "Host": "hub.gke2.mybinder.org",
+      "Connection": "close"
+    }
+[E 20:15:38.064 NotebookApp] 500 DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version/PyScript (108.92.69.109) 2.470000ms referer=https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree/Py3_version
+[W 20:15:44.251 NotebookApp] delete /Py3_version/Binder/environment.yml
+[W 20:15:57.902 NotebookApp] delete /Py3_version/PyScript/regrex1.csv
+[W 20:15:57.908 NotebookApp] delete /Py3_version/PyScript/py3 scatterplot.py
+[W 20:15:57.913 NotebookApp] delete /Py3_version/PyScript/README.md
+[W 20:16:05.000 NotebookApp] delete /Py3_version/PyScript/Binder/environment.yml
+[W 20:16:08.570 NotebookApp] delete /Py3_version/PyScript/Binder
+[E 20:16:08.570 NotebookApp] Uncaught exception DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version/PyScript/Binder (108.92.69.109)
+    HTTPServerRequest(protocol='https', host='hub.gke2.mybinder.org', method='DELETE', uri='/user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version/PyScript/Binder', version='HTTP/1.1', remote_ip='108.92.69.109')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/handlers.py", line 237, in delete
+        yield maybe_future(cm.delete(path))
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 279, in delete
+        self.delete_file(path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 533, in delete_file
+        send2trash(os_path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 192, in send2trash
+        trash_move(path_b, dest_trash, topdir)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 103, in trash_move
+        os.rename(src, op.join(filespath, destname))
+    OSError: [Errno 18] Invalid cross-device link: b'/home/jovyan/Py3_version/PyScript/Binder' -> b'/home/jovyan/.local/share/Trash/files/Binder'
+[W 20:16:08.571 NotebookApp] Unhandled error
+[E 20:16:08.572 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-gke2-mybinder-org=\"2|1:0|10:1625256819|30:username-hub-gke2-mybinder-org|44:Yzg5NGE1N2YwODU0NDA1NWFkNmZiYmY0ODRiZWVmMzE=|5567b44ba449520673bbf9b9a802291660265a6961682a36ef7462fde79e4107\"; _xsrf=2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree/Py3_version/PyScript",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "Origin": "https://hub.gke2.mybinder.org",
+      "Sec-Gpc": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
+      "X-Xsrftoken": "2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "X-Requested-With": "XMLHttpRequest",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub.gke2.mybinder.org",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "108.92.69.109,::ffff:10.0.15.52",
+      "X-Real-Ip": "108.92.69.109",
+      "X-Request-Id": "2197db480d63361d89ab922c6c8e342f",
+      "Host": "hub.gke2.mybinder.org",
+      "Connection": "close"
+    }
+[E 20:16:08.572 NotebookApp] 500 DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version/PyScript/Binder (108.92.69.109) 2.530000ms referer=https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree/Py3_version/PyScript
+[W 20:16:14.665 NotebookApp] delete /Py3_version/PyScript
+[E 20:16:14.666 NotebookApp] Uncaught exception DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version/PyScript (108.92.69.109)
+    HTTPServerRequest(protocol='https', host='hub.gke2.mybinder.org', method='DELETE', uri='/user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version/PyScript', version='HTTP/1.1', remote_ip='108.92.69.109')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/handlers.py", line 237, in delete
+        yield maybe_future(cm.delete(path))
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 279, in delete
+        self.delete_file(path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 533, in delete_file
+        send2trash(os_path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 192, in send2trash
+        trash_move(path_b, dest_trash, topdir)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 103, in trash_move
+        os.rename(src, op.join(filespath, destname))
+    OSError: [Errno 18] Invalid cross-device link: b'/home/jovyan/Py3_version/PyScript' -> b'/home/jovyan/.local/share/Trash/files/PyScript'
+[W 20:16:14.666 NotebookApp] Unhandled error
+[E 20:16:14.667 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-gke2-mybinder-org=\"2|1:0|10:1625256819|30:username-hub-gke2-mybinder-org|44:Yzg5NGE1N2YwODU0NDA1NWFkNmZiYmY0ODRiZWVmMzE=|5567b44ba449520673bbf9b9a802291660265a6961682a36ef7462fde79e4107\"; _xsrf=2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree/Py3_version",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "Origin": "https://hub.gke2.mybinder.org",
+      "Sec-Gpc": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
+      "X-Xsrftoken": "2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "X-Requested-With": "XMLHttpRequest",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub.gke2.mybinder.org",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "108.92.69.109,::ffff:10.0.15.52",
+      "X-Real-Ip": "108.92.69.109",
+      "X-Request-Id": "9f1abfa94daf46dc798e49cccc0ffb5f",
+      "Host": "hub.gke2.mybinder.org",
+      "Connection": "close"
+    }
+[E 20:16:14.667 NotebookApp] 500 DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version/PyScript (108.92.69.109) 2.730000ms referer=https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree/Py3_version
+[I 20:16:35.675 NotebookApp] Refusing to serve hidden directory '/home/jovyan/.Py3_version', via 404 Error
+[W 20:16:35.675 NotebookApp] 404 PATCH /user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version (108.92.69.109): directory does not exist: '.Py3_version'
+[W 20:16:35.675 NotebookApp] directory does not exist: '.Py3_version'
+[W 20:16:35.676 NotebookApp] 404 PATCH /user/ilvailska-rscript-r3vr5tvz/api/contents/Py3_version (108.92.69.109) 4.720000ms referer=https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree
+[I 20:16:48.842 NotebookApp] Kernel shutdown: 8583453c-0e26-4391-8a68-73bad71095db
+[W 20:16:48.948 NotebookApp] delete /R_version/R Scatterplot.ipynb
+[W 20:16:48.949 NotebookApp] delete /R_version/R Scatterplot.html
+[W 20:16:48.962 NotebookApp] delete /R_version/README.md
+[W 20:16:48.968 NotebookApp] delete /R_version/regrex1.csv
+[W 20:16:51.833 NotebookApp] delete /R_version/Rscript
+[E 20:16:51.833 NotebookApp] Uncaught exception DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/R_version/Rscript (108.92.69.109)
+    HTTPServerRequest(protocol='https', host='hub.gke2.mybinder.org', method='DELETE', uri='/user/ilvailska-rscript-r3vr5tvz/api/contents/R_version/Rscript', version='HTTP/1.1', remote_ip='108.92.69.109')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/handlers.py", line 237, in delete
+        yield maybe_future(cm.delete(path))
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 279, in delete
+        self.delete_file(path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 533, in delete_file
+        send2trash(os_path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 192, in send2trash
+        trash_move(path_b, dest_trash, topdir)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 103, in trash_move
+        os.rename(src, op.join(filespath, destname))
+    OSError: [Errno 18] Invalid cross-device link: b'/home/jovyan/R_version/Rscript' -> b'/home/jovyan/.local/share/Trash/files/Rscript'
+[W 20:16:51.834 NotebookApp] Unhandled error
+[E 20:16:51.835 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-gke2-mybinder-org=\"2|1:0|10:1625256819|30:username-hub-gke2-mybinder-org|44:Yzg5NGE1N2YwODU0NDA1NWFkNmZiYmY0ODRiZWVmMzE=|5567b44ba449520673bbf9b9a802291660265a6961682a36ef7462fde79e4107\"; _xsrf=2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree/R_version",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "Origin": "https://hub.gke2.mybinder.org",
+      "Sec-Gpc": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
+      "X-Xsrftoken": "2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "X-Requested-With": "XMLHttpRequest",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub.gke2.mybinder.org",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "108.92.69.109,::ffff:10.0.15.52",
+      "X-Real-Ip": "108.92.69.109",
+      "X-Request-Id": "b315fa678c6bbeaccd33840d889a8cce",
+      "Host": "hub.gke2.mybinder.org",
+      "Connection": "close"
+    }
+[E 20:16:51.835 NotebookApp] 500 DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/R_version/Rscript (108.92.69.109) 2.480000ms referer=https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree/R_version
+[W 20:16:58.185 NotebookApp] delete /R_version/Binder/environment.yml
+[W 20:17:03.547 NotebookApp] delete /R_version/Rscript/Binder
+[E 20:17:03.547 NotebookApp] Uncaught exception DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/R_version/Rscript/Binder (108.92.69.109)
+    HTTPServerRequest(protocol='https', host='hub.gke2.mybinder.org', method='DELETE', uri='/user/ilvailska-rscript-r3vr5tvz/api/contents/R_version/Rscript/Binder', version='HTTP/1.1', remote_ip='108.92.69.109')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/handlers.py", line 237, in delete
+        yield maybe_future(cm.delete(path))
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 279, in delete
+        self.delete_file(path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 533, in delete_file
+        send2trash(os_path)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 192, in send2trash
+        trash_move(path_b, dest_trash, topdir)
+      File "/srv/conda/envs/notebook/lib/python3.8/site-packages/send2trash/plat_other.py", line 103, in trash_move
+        os.rename(src, op.join(filespath, destname))
+    OSError: [Errno 18] Invalid cross-device link: b'/home/jovyan/R_version/Rscript/Binder' -> b'/home/jovyan/.local/share/Trash/files/Binder'
+[W 20:17:03.548 NotebookApp] Unhandled error
+[E 20:17:03.549 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-gke2-mybinder-org=\"2|1:0|10:1625256819|30:username-hub-gke2-mybinder-org|44:Yzg5NGE1N2YwODU0NDA1NWFkNmZiYmY0ODRiZWVmMzE=|5567b44ba449520673bbf9b9a802291660265a6961682a36ef7462fde79e4107\"; _xsrf=2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree/R_version/Rscript",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "Origin": "https://hub.gke2.mybinder.org",
+      "Sec-Gpc": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
+      "X-Xsrftoken": "2|8c5f6cdf|60e3cff4ff48679a65f94a751a533bb6|1624551746",
+      "X-Requested-With": "XMLHttpRequest",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub.gke2.mybinder.org",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "108.92.69.109,::ffff:10.0.15.52",
+      "X-Real-Ip": "108.92.69.109",
+      "X-Request-Id": "3cddd75fd6d7eb62e3a511765312c930",
+      "Host": "hub.gke2.mybinder.org",
+      "Connection": "close"
+    }
+[E 20:17:03.549 NotebookApp] 500 DELETE /user/ilvailska-rscript-r3vr5tvz/api/contents/R_version/Rscript/Binder (108.92.69.109) 4.890000ms referer=https://hub.gke2.mybinder.org/user/ilvailska-rscript-r3vr5tvz/tree/R_version/Rscript
+[W 20:17:03.550 NotebookApp] delete /R_version/Rscript/README.md
+[W 20:17:03.555 NotebookApp] delete /R_version/Rscript/regrex1.csv
+[W 20:17:08.124 NotebookApp] delete /R_version/Rscript/Binder/environment.yml
+[I 20:17:15.416 NotebookApp] New terminal with automatic name: 1
+TermSocket.open: 1
+TermSocket.open: Opened 1
